@@ -1,23 +1,103 @@
 <!DOCTYPE HTML>
 <head>
-	<meta charset="UTF-8" />
-	<title>Aro First</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <meta charset="UTF-8" />
+    <title>Aro First</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link href='http://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
+    <link type="text/css" rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-	<main>
-		<header>
-			<nav>
-				<ul>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
-				</ul>
-			</nav>
-		</header>
-		<section></section>
-	</main>
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <!-- <h1>Scroll Value</h1>
+    <p class="indicator">
+    Scroll Value Indicator :
+    <span id="scrollValue">0</span>
+    </p> -->
+    <div id="logo"><p></p></div>
+
+    <main>
+    <header>
+        <nav id="menu">
+            <ul>
+                <li class="facebook">
+                    <p><a href="#slide-2">Facebook</a></p>
+                    <p class="subtext">Contact us with Facebook</p>
+                </li>
+                <li class="twitter">
+                    <p><a href="#slide-3">Twitter</a></p>
+                    <p class="subtext">Contact us with Twitter</p>
+                </li>
+                <li class="email">
+                    <p><a href="#slide-4">Email</a></p>
+                    <p class="subtext">Contact us with Email</p>
+                </li>
+                <li class="compact">
+                    <p><a href="#slide-5">Compact</a></p>
+                    <p class="subtext">Send us your stuff!</p>
+                </li>                
+            </ul>
+        </nav>
+    </header>
+
+    <section id="slide-1">
+        <div class="bcg">
+            <div class="container">
+                <div class="content">
+                	<h1>We are following your vision</h1>
+                    <div class="signin-buttons">
+                        <form method="POST" action="http://seoaro.cafe24.com/home/#">
+                            <button class="form-submit googleplus" type="submit" title="Continue with Google+"></button>
+                            <input type="hidden" name="type" value="2">
+                        </form>
+                        <form method="POST" action="http://seoaro.cafe24.com/home/#">
+                            <button class="form-submit facebook" type="submit" title="Continue with Facebook"></button>
+                            <input type="hidden" name="type" value="3">
+                        </form>
+                        <form method="GET" action="http://seoaro.cafe24.com/home/#">
+                            <button class="form-submit twitter" type="submit" title="Continue with Twitter"></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="slide-2">
+        <div class="bcg">
+            <div class="container">
+                <div class="content">
+                    <h1>Here's Our Apps</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="slide-3">
+        <div class="bcg">
+            <div class="container">
+                <div class="content">
+                    <h1>More than 100 apps we created</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="slide-4">
+        <div class="bcg">
+            <div class="container">
+                <div class="content">
+                    <h1>Even Android Apps</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="slide-5">
+        <div class="bcg">
+            <div class="container">
+                <div class="content">
+                    <h1>Find your solutions from ours</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/skrollr.js"></script>
 </body>
+</html>
