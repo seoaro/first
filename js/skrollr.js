@@ -13,17 +13,19 @@ $(function() {
 		$("#slide-1 .signin-buttons").css("opacity", 1 - scrollValue / 500 );
 		$("#slide-1 .bcg").css("background-position-y", -scrollValue);
 		$("#slide-1 .bcg").css("opacity", 1 - scrollValue / 100 );
+
 		// Slide-2
 		if (scrollValue > slide2top) {
 			$("#slide-2 .bcg").css("background-position-y", -scrollValue);
+			$("#slide-2 .bcg").css("opacity", 1.5 -scrollValue / 500 );
 			$("#slide-2 h1").css("opacity", 1 - scrollValue / 500 );
 		}
 		
 		// Slide-3
 		if (scrollValue > slide3top) {
-			$("#slide-3 .bcg").css("background-position-x", -scrollValue / 10 );
+			$("#slide-3 .bcg").css("background-position-x", 30 - scrollValue / 5 );
 			$("#slide-3 .bcg").css("opacity", 2 - scrollValue / 1000 );
-			$("#slide-3 h1").css("opacity", 2 - scrollValue / 500 );
+			$("#slide-3 h1").css("opacity", 2 - scrollValue / 600 );
 		}
 
 		// Slide-4
