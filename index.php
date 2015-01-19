@@ -1,22 +1,23 @@
 <?php
-	// readfile() 으로 텍스트나 이미지를 화면에 출력하지 않고 다운로드하는 방법
-	$filename = "readfile.txt";
+	$original_string = "happybrown";
+	$salt = "$1$brownsalt";
+	$user_input = "happyblack";
 
-	//헤더 정보를 변경한다.
-	header("Pragma: public");
-	header("Expires: 0");
-	header("Cache-Control: must-revalidate, post-check=0, pre-check=0");
-	header('Content-Description: File Transfer');
+	if (CRYPT_MD5 == 1)
+	{
+		$crypt_string = crypt($original_string, $salt);
 
-	//파일의 형식을 변경
-	header('Content-Type: application/octet-stream');
-
-	//파일의 크기
-	header('Content-Length: ' . filesize($filename));
-
-	//파일 이름
-	header('Content-Disposition: attachment; filename='
-		. basename($filename));
-	//파일을 출력
-	@readfile($filename);
+		if ($crypt_string == crypt($user_input, $salt))
+		{
+			echo "비밀번호가 일치합니다.";
+		}
+		else
+		{
+			echo "비밀번호가 일치하지 않습니다.";
+		}
+	}
+	else
+	{
+		echo "MD5 암호화 알고리즘을 지원하지 않습니다.";
+	}
 ?>
