@@ -1,13 +1,13 @@
 <?php
 	$original_string = "happybrown";
 	$salt = "$1$brownsalt";
-	$user_input = "happyblack";
+	$user_input = "happybrown";
 
 	if (CRYPT_MD5 == 1)
 	{
-		$crypt_string = crypt($original_string, $salt);
-
-		if ($crypt_string == crypt($user_input, $salt))
+		$crypt_string = md5($original_string);
+		echo "encrypted password : $crypt_string<br>";
+		if ($crypt_string == md5($user_input))
 		{
 			echo "비밀번호가 일치합니다.";
 		}
