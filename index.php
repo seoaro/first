@@ -1,5 +1,19 @@
 <?php
-	$email = 'happybrown@naver.com';
-	$domain = strstr($email, '@');
-	echo $domain; //@naver.com이 출력됨
+	echo mt_rand();
+	echo "<br>";
+	echo mt_rand(1,10);
+	echo "<br>";
+	echo mt_rand(40000,50000);
+	echo "<br><br>";
+	echo mt_rand(1,45);
+	echo "<br>";
+	echo mt_rand(1,45);
+	echo "<br>";
+	echo mt_rand(1,45);
+	echo "<br>";
+	echo mt_rand(1,45);
+	echo "<br>";
+	echo mt_rand(1,45);
+	echo "<br>";
+	echo mt_rand(1,45);
 ?>
