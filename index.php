@@ -1,6 +1,15 @@
 <?php
-	$christmas = "2007-12-25";
+	$haystack = "She is a very hot woman";
+	$needle = "hot";
 
-	$date = sscanf($christmas, "%d-%d-%d");
-	echo "{$date[0]}년 {$date[1]}월 {$date[2]}일은 크리스마스입니다.";
+	$pos = strpos($haystack, $needle);
+
+	if ($pos === false)
+	{
+		echo "문자열을 찾지 못했습니다.";
+	}
+	else
+	{
+		echo "{$pos} 위치에서 문자열을 찾았습니다.";
+	}
 ?>
