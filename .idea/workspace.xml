@@ -28,11 +28,9 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5" vertical-offset="45" max-vertical-offset="525">
-              <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
-              <folding>
-                <element signature="e#6#39#0#PHP" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.035714287" vertical-offset="0" max-vertical-offset="420">
+              <caret line="1" column="31" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -51,8 +49,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="73" />
-    <option name="y" value="49" />
+    <option name="x" value="23" />
+    <option name="y" value="41" />
     <option name="width" value="1400" />
     <option name="height" value="773" />
   </component>
@@ -159,7 +157,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="73" y="49" width="1400" height="773" extended-state="0" />
+    <frame x="23" y="41" width="1400" height="773" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32954547" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -208,11 +206,9 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5" vertical-offset="45" max-vertical-offset="525">
-          <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
-          <folding>
-            <element signature="e#6#39#0#PHP" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.035714287" vertical-offset="0" max-vertical-offset="420">
+          <caret line="1" column="31" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
+          <folding />
         </state>
       </provider>
     </entry>

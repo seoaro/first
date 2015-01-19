@@ -1,30 +1,22 @@
 <?php
-//	$array = file('somefile.txt');
-//
-//	foreach ($array as $line_num => $line) {
-//		echo "#{$line_num} : $line <br>\n";
-//	}
-//
-//	$array = file('http://www.naver.com/');
-//
-//	foreach ($array as $line_num => $line) {
-//		echo htmlspecialchars($line) . " <br>\n";
-//	}
-	$filename = "filetest.txt";
+	// readfile() 으로 텍스트나 이미지를 화면에 출력하지 않고 다운로드하는 방법
+	$filename = "readfile.txt";
 
-	$handle = fopen($filename, "rw");
+	//헤더 정보를 변경한다.
+	header("Pragma: public");
+	header("Expires: 0");
+	header("Cache-Control: must-revalidate, post-check=0, pre-check=0");
+	header('Content-Description: File Transfer');
 
-	if ($handle) {
-		echo "done <BR><BR>";
-	} else {
-		echo "false <BR>";
-	}
-	$string = "자극하는 PHP 프로그래밍";
-	fwrite($handle, $string);
-	//
-	$handle = fopen($filename, "r");
-	$contents = fread($handle, filesize($filename));
-	echo "$contents";
-	fclose($handle);
+	//파일의 형식을 변경
+	header('Content-Type: application/octet-stream');
 
+	//파일의 크기
+	header('Content-Length: ' . filesize($filename));
+
+	//파일 이름
+	header('Content-Disposition: attachment; filename='
+		. basename($filename));
+	//파일을 출력
+	@readfile($filename);
 ?>
